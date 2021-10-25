@@ -28,6 +28,11 @@ variable "region" {
   default     = "us-central1"
 }
 
+variable "zones" {
+  type    = list
+  default = []
+}
+
 variable "network" {
   description = "The VPC network created to host the cluster in"
   default     = "gke-network"

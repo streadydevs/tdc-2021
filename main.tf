@@ -60,9 +60,27 @@ module "gke" {
   name                   = var.cluster_name
   regional               = true
   region                 = var.region
+  zones                  = var.zones
   network                = module.gcp-network.network_name
   subnetwork             = module.gcp-network.subnets_names[0]
   ip_range_pods          = var.ip_range_pods_name
   ip_range_services      = var.ip_range_services_name
   create_service_account = true
+
+  node_pools = [
+    {
+      name                      = "default-node-pool"
+      machine_type              = "e2-small"
+      min_count                 = 1
+      max_count                 = 3
+      local_ssd_count           = 0
+      disk_size_gb              = 50
+      disk_type                 = "pd-standard"
+      image_type                = "COS"
+      auto_repair               = true
+      auto_upgrade              = true
+      preemptible               = false
+      initial_node_count        = 1
+    },
+  ]
 }
