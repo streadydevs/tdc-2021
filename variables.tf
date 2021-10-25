@@ -25,7 +25,7 @@ variable "cluster_name" {
 
 variable "region" {
   description = "The region to host the cluster in"
-  default     = "us-central1"
+  default     = "europe-west1"
 }
 
 variable "zones" {
