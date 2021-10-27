@@ -103,7 +103,7 @@ To access the web server port-forward traffic to the cluster with this command
 kubectl port-forward service/bakery-app 8080:80
 ```
 
-If you are in the Cloud Shell Editor you can hit "Web Preview" and you'll be able to access ports on your Cloud Shell instance.
+If you are in the Cloud Shell Editor then port forwarding will forward traffic to your cloud instance to the cluster, but that still won't let you send traffic to the port from your local machine. To make Google expose the port on your Cloud Shell instance you can **click "Web Preview" in the top right corner of Cloud Shell Editor** and you'll be able to access ports on your Cloud Shell instance. Choose "Preview on port 8080".
 
 Hit Ctrl+C to stop port-forwarding and return to your shell
 
