@@ -1,6 +1,6 @@
 # Cleanup
 
-In a regular project you might easily lose track of which cloud resources you are using and which you are not using but still paying for. If only we had some way to track which resources we are using for this project.
+In a normal project you might easily lose track of which cloud resources you are using and which you are not using but still paying for. If only there was a tool that could track which resources we are actually using!
 
 Hint: it's Terraform
 
@@ -9,7 +9,7 @@ Terraform makes cleanup very simple. Navigate to the `terraform/` folder and run
 terraform destroy
 ```
 
-And terraform will destroy all the infrastructure you created earlier.
+Terraform will now destroy all the infrastructure you created earlier. It might take a few minutes.
 
 If you're having trouble removing your cloud resources you can navigate to the Google Cloud Console and delete (in order):
 * Your Kubernetes cluster
