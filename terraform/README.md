@@ -2,6 +2,11 @@
 
 The terraform configuration in this guide is based on the [simple regional with networking](https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/tree/v17.0.0/examples/simple_regional_with_networking) example in the terraform `gke` module by Google.
 
+All commands in this section should be run from the `terraform/` directory:
+```
+cd terraform
+```
+
 ## Overview
 
 Terraform is an open-source infrastructure as code software tool. It allows you to write infrastructure as code using declarative configuration files.
