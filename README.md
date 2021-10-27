@@ -20,7 +20,7 @@ You will need:
 If you are attending the TDC session instructions will be given for Google's [Cloud Shell Editor](https://shell.cloud.google.com), which has all of the required tools installed and already configured. It is strongly recommended to use the Cloud Shell Editor if you are new to these tools.
 
 ## Disclaimer
-Following this quickstart will incur a cost for the cloud resources that are created. The costs associated with following this quickstart should stay well below a dollar per hour but please make sure to follow the [cleanup](/cleanup/) section to avoid unnecessary costs. If you are unsure you did the cleanup correctly you can inspect your billing account in Google Cloud Platform in a day or two, or consider deleting the project you created resources in.
+Following this quickstart will incur a cost for the cloud resources that are created. The costs associated with following this quickstart should stay well below a dollar per hour but please make sure to follow the instructions in the [cleanup](/cleanup/) section to avoid unnecessary costs. If you are unsure you did the cleanup correctly you can inspect your billing account in Google Cloud Platform in a day or two, or consider deleting the project you created resources in.
 
 
 # Contents
