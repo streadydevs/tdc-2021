@@ -19,6 +19,10 @@ You will need:
 
 If you are attending the TDC session instructions will be given for Google's [Cloud Shell Editor](https://shell.cloud.google.com), which has all of the required tools installed and already configured. It is strongly recommended to use the Cloud Shell Editor if you are new to these tools.
 
+Tip for Cloud Shell Editor: Go to Preferences -> search for "yaml validate" and turn OFF the yaml validation.
+
+Helm charts have templated files, which are .yaml files that have templating code inside them and is therefore not valid yaml. Turning off yaml validation helps when working with these templates.
+
 If you are planning on using your local machine and not the Cloud Shell Editor here are some links to installation instructions
 * [Installing Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 * [Installing Helm](https://helm.sh/docs/intro/install/)
