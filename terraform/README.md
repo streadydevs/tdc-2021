@@ -121,7 +121,7 @@ If everything went well your cluster is now running and ready for workloads.
 
 To configure `kubectl` for access to your cluster's control plane run:
 ```
-gcloud container clusters get-credentials gke-on-vpc-cluster
+gcloud container clusters get-credentials gke-on-vpc-cluster --region europe-north1
 ```
 
 Test your access to the GKE cluster by running
