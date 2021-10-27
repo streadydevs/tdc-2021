@@ -39,8 +39,8 @@ touch terraform.tfvars
 
 Edit the file and add
 ```
-project_id   = "YOUR PROJECT ID HERE"
-cluster_name = "tdc-demo"
+project_id = "YOUR PROJECT ID HERE"
+region     = "europe-north1"
 ```
 
 Real world considerations:
