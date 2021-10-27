@@ -15,6 +15,8 @@ If you're having trouble removing your cloud resources you can navigate to the G
 * Your Kubernetes cluster
 * The VPC subnet called `gke-subnet`
 * The VPC network called `gke-network`
+* The service account called something along the lines of `tf-gke-gke-on-vpc-clus-xxxx@...iam.gserviceaccount.com`
+* The IAM permission granted to the service account above
 
 # Contents
 * [1. Getting started with Terraform](/terraform/)
