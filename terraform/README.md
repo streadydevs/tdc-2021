@@ -105,12 +105,15 @@ zones      = ["europe-north1-a"]
 ```
 
 After the change, run:
-`terraform apply`
+```
+terraform apply
+```
+Before typing `yes` make sure you are happy with the changes terraform is suggesting
 
 Real world considerations:
 * The `terraform.tfstate` file should NOT be committed as it contains sensitive information such as IP addresses and credentials for accessing cloud resources. To share this state between team members you should set up a [remote backend](https://www.terraform.io/docs/language/settings/backends/index.html) such as `gcs` for storing the file in a Google Cloud Storage bucket, or using state management from [Terraform Cloud](https://www.terraform.io/cloud) (free up to 5 team members).
 * For keeping track of terraform state for several environments it's recommended to use [workspaces](https://www.terraform.io/docs/cloud/guides/recommended-practices/part1.html) to separate environments.
-* Always use `terraform plan -out <plan-file>` and `terraform apply <plan-file>` to make sure changes are as expected.
+* For production infrastructure you should use `terraform plan -out <plan-file>` and `terraform apply <plan-file>` to make sure changes are as expected, or even better have CI/CD or similar trigger terraform runs [GitOps style](https://www.hashicorp.com/resources/unlocking-cloud-with-gitops-with-terraform-and-sentinel).
 
 ## Accessing your newly created cluster
 
