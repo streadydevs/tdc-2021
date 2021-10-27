@@ -100,7 +100,8 @@ Our cluster is a regional cluster with redundant nodes in all zones. Let's limit
 ```
 # terraform.tfvars
 project_id = "YOUR PROJECT ID HERE"
-zones = ["europe-north1-a"]
+region     = "europe-north1"
+zones      = ["europe-north1-a"]
 ```
 
 After the change, run:
